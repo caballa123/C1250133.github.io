@@ -83,12 +83,6 @@ nav ul li a:hover{
 .card:hover{
     transform: scale(1.05);
 }
-footer{
-    background: #0d6efd;
-    color: white;
-    padding: 15px;
-    text-align: center;
-}
 @media(max-width:768px){
     header{
         display:flex;
@@ -260,4 +254,26 @@ input[type="checkbox"]{
 }
 .about p{
     line-height: 1.8;
+}
+
+html,body{
+    height:100%;
+    margin:0;
+}
+
+body{
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+}
+
+main{
+    flex:1;
+}
+
+footer{
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:15px;
 }
