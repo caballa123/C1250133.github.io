@@ -91,15 +91,19 @@ footer{
 }
 @media(max-width:768px){
     header{
+        display:flex;
         flex-direction: column;
+        align-items:center;
     }
     nav ul{
+        display:flex;
         flex-direction: column;
         text-align: center;
     }
-
-
 }
+
+
+
 .gallary{
     padding: 120px 20px;
     text-align: center;
@@ -132,8 +136,6 @@ footer{
 .gallary-card:hover{
     transform: scale(1.05);
     transition: 0.5s;
-
-
 }
 .service-table{
     width: 90;
@@ -164,6 +166,8 @@ tfoot{
     color: white;
     font-weight: bold;
 }
+
+
 
 .booking{
     padding: 120px 20px;
@@ -212,6 +216,8 @@ input[type="checkbox"]{
     width: auto;
 }
 
+
+
 .help{
     max-width: 900px;
     margin: 100px auto;
@@ -228,6 +234,8 @@ input[type="checkbox"]{
 .help p{
     line-height: 1.8;
 }
+
+
 
 .about{
     max-width: 900px;
