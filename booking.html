@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h2>IT support and service</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallary.html">Gallary</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="booking">
+
+            <h1>Book IT Services</h1>
+
+            <form>
+                <fieldset>
+
+                    <legend>Personal Information</legend>
+
+                    <label for="name">Full Name :</label>
+                    <input type="text" id="name" placeholder="enter your full name" required>
+
+                    <label for="major">major</label>
+                    <select name="" id="major">
+                        <option>Select major</option>
+                        <option>Computer Science</option>
+                        <option>Information Technology</option>
+                        <option>Networking</option>
+                        <optoin>Software Engineering</option>
+                    </select>
+
+                    <label>Gender</label>
+                    <input type="radio" name="gender">male
+                    <input type="radio" name="gender" >female
+
+                    <label>hobbies</label>
+                    <input type="checkbox">Coding
+                    <input type="checkbox">Reading
+                    <input type="checkbox">Gaming
+
+
+                    <label for="comments">Comments</label>
+                    <textarea name="" id="comments" placeholder="write your comments"></textarea>
+                    <input type="submit" value="submit booking">
+
+                </fieldset>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

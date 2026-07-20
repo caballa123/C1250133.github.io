@@ -1,0 +1,255 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0d6efd;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    top: 0;
+    position: fixed;
+}
+.logo h2{
+    text-shadow: 2px 2px 5px gray;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin-left: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: yellow;
+}
+.hero{
+    background-image:linear-gradient(rgba(0,0,0,0.5)) ,url(image/card.jpg);
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
+    min-height: 500px;
+}
+.hero h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.hero p{
+    margin-bottom: 20px;
+    padding: 18px;
+    font-size: 20px;
+}
+.btn{
+    background: white;
+    color: #0d6efd;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+}
+.btn:hover{
+    background: yellow;
+}
+.service{
+    padding: 70px 20px;
+    text-align: center;
+}
+.service-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.card{
+    background: white;
+    width: 280px;
+    padding: 25px;
+    box-shadow: 0 0 10px gray;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+footer{
+    background: #0d6efd;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+@media(max-width:768px){
+    header{
+        flex-direction: column;
+    }
+    nav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+}
+.gallary{
+    padding: 120px 20px;
+    text-align: center;
+}
+.gallary-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.gallary-card{
+    width: 300px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px gray;
+}
+.gallary-card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.gallary-card img h3{
+    padding: 15px;
+}
+.gallary-card:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+
+
+}
+.service-table{
+    width: 90;
+    margin: 50px auto;
+    text-align: center;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th,td{
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+th{
+    background:#0d6efd;
+    color: white;
+}
+tr:nth-child(even){
+    background: #f2f2f2;
+}
+tr:hover{
+    background: #dbeafe;
+}
+tfoot{
+    background: #0d6efd;
+    color: white;
+    font-weight: bold;
+}
+
+.booking{
+    padding: 120px 20px;
+}
+.booking h1{
+    text-align: center;
+}
+form{
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction:column;
+    gap: 15px;
+}
+fieldset{
+    padding: 20px;
+    border: 2px solid #0d6efd;
+    border-radius: 10px;
+}
+legend{
+    font-weight: bold;
+    color: #0d6efd;
+}
+input,select,textarea{
+    padding: 10px;
+    width: 100%;
+}
+input[type="submit"]{
+    background: #0d6efd;
+    color:white;
+    border: none;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background: #084298;
+}
+label{
+    display: block;
+    gap: 20px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input[type="radio"],
+input[type="checkbox"]{
+    width: auto;
+}
+
+.help{
+    max-width: 900px;
+    margin: 100px auto;
+    padding: 20px;
+}
+.help h1{
+    color: #0d6efd;
+    margin-bottom: 20px;
+}
+.help h2{
+    color: #084298;
+    margin-top: 20px;
+}
+.help p{
+    line-height: 1.8;
+}
+
+.about{
+    max-width: 900px;
+    margin: 100px auto;
+    padding: 20px;
+    text-align: center;
+}
+.profile{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid #0d6efd;
+    object-fit: cover;
+    margin: 20px 0;
+}
+.about h1{
+    color: #0d6efd;
+}
+.about h2{
+    margin-top: 20px;
+    color: #084298;
+}
+.about p{
+    line-height: 1.8;
+}
